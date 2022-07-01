@@ -10,7 +10,7 @@ class Bindplane < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/observIQ/bindplane/releases/download/v0.5.0/bindplane-v0.5.0-darwin-amd64.zip"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v0.5.0/bindplane-v0.5.0-darwin-amd64.zip"
       sha256 "fb56d6103d5619395edc871408d6eed8bf3fe7f55c6e4ef18f5978d2c997390a"
 
       def install
@@ -19,7 +19,7 @@ class Bindplane < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/observIQ/bindplane/releases/download/v0.5.0/bindplane-v0.5.0-darwin-arm64.zip"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v0.5.0/bindplane-v0.5.0-darwin-arm64.zip"
       sha256 "49084efdf373d87d76aa0de3867a5c33ccfa1f02ad879b07372e8f7312edc893"
 
       def install
@@ -31,7 +31,7 @@ class Bindplane < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/observIQ/bindplane/releases/download/v0.5.0/bindplane-v0.5.0-linux-amd64.zip"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v0.5.0/bindplane-v0.5.0-linux-amd64.zip"
       sha256 "54a076b89b30372c04126dc719c1b8cd081e3aa065fd8dc5cbebda186261ffdf"
 
       def install
@@ -40,7 +40,7 @@ class Bindplane < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/observIQ/bindplane/releases/download/v0.5.0/bindplane-v0.5.0-linux-arm64.zip"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v0.5.0/bindplane-v0.5.0-linux-arm64.zip"
       sha256 "70f97dbc57bae397be1239e33933380a777a52170e19db3ad01d41e11b09c8a2"
 
       def install
@@ -49,7 +49,7 @@ class Bindplane < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/observIQ/bindplane/releases/download/v0.5.0/bindplane-v0.5.0-linux-arm.zip"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v0.5.0/bindplane-v0.5.0-linux-arm.zip"
       sha256 "b0a6ab0bace44f71219a3b9040816ff6981533f55ece791194962c4f02db19fb"
 
       def install
