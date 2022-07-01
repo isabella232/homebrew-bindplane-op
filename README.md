@@ -16,20 +16,21 @@ A [Homebrew](https://brew.sh/) tap for [observiq/bindplane](https://github.com/o
 Add the homebrew tap:
 
 ```bash
-brew tap observiq/homebrew-bindplane-op
+brew tap observIQ/homebrew-bindplane-op
 brew update
 ```
 
 Install BindPlane:
 
 ```bash
-brew install observiq/bindplane-op
+brew install observIQ/homebrew-bindplane-op/bindplane
 ```
 
 Verify the Install:
 
 ```bash
 which bindplane
+which bindplanectl
 bindplane version
 ```
 
@@ -39,5 +40,5 @@ BindPlane can be updated with two simple commands:
 
 ```bash
 brew update
-brew upgrade observiq/bindplane-op
+brew upgrade observIQ/homebrew-bindplane-op/bindplane
 ```
