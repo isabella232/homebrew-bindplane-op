@@ -5,13 +5,13 @@
 class Bindplane < Formula
   desc ""
   homepage "https://github.com/observIQ/bindplane-op"
-  version "1.1.0"
+  version "1.2.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/observIQ/bindplane-op/releases/download/v1.1.0/bindplane-v1.1.0-darwin-amd64.zip"
-      sha256 "af548177517802d59778f64399fd56c9bb7f41a6d45457400001852c210388b6"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v1.2.0/bindplane-v1.2.0-darwin-amd64.zip"
+      sha256 "f0fa6b7149db42587e806b6ad8954da0225b6259c75cdadb1df9ce9ddc186366"
 
       def install
         bin.install "bindplane"
@@ -19,8 +19,8 @@ class Bindplane < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/observIQ/bindplane-op/releases/download/v1.1.0/bindplane-v1.1.0-darwin-arm64.zip"
-      sha256 "8695a74541c62481a8f4028e69224c05f875bf97707213477476e4ac7922a771"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v1.2.0/bindplane-v1.2.0-darwin-arm64.zip"
+      sha256 "927a55b52a27ebd8622fa5caf858e48887b89ef5c6ac51a1640f25a5ceb97532"
 
       def install
         bin.install "bindplane"
@@ -30,18 +30,9 @@ class Bindplane < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/observIQ/bindplane-op/releases/download/v1.1.0/bindplane-v1.1.0-linux-amd64.zip"
-      sha256 "03859766f233f3d3028721290a9b4805e4263e2a0eb480fa667569c1cd84eb4c"
-
-      def install
-        bin.install "bindplane"
-        bin.install "bindplanectl"
-      end
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/observIQ/bindplane-op/releases/download/v1.1.0/bindplane-v1.1.0-linux-arm64.zip"
-      sha256 "603d84e86124b31fe79f9d96ab324420fd5d28572b4d35aa6f07be57510df722"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v1.2.0/bindplane-v1.2.0-linux-arm64.zip"
+      sha256 "99525e3d298c250974de5420937f6bea9511775620d2a372de49998a75142d71"
 
       def install
         bin.install "bindplane"
@@ -49,8 +40,17 @@ class Bindplane < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/observIQ/bindplane-op/releases/download/v1.1.0/bindplane-v1.1.0-linux-arm.zip"
-      sha256 "3a4fcd61955fef00d6943ee70fdaf6f5bdc1e071e527557ed50a639ef6ae9101"
+      url "https://github.com/observIQ/bindplane-op/releases/download/v1.2.0/bindplane-v1.2.0-linux-arm.zip"
+      sha256 "9d54dfa072ae4ebe0f8ab5c79bf900b3522314fdae201a22b9497c007710af1c"
+
+      def install
+        bin.install "bindplane"
+        bin.install "bindplanectl"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/observIQ/bindplane-op/releases/download/v1.2.0/bindplane-v1.2.0-linux-amd64.zip"
+      sha256 "78770581f43aedf0be9e40fdab2fc2099a642f620ab4659da35f55c72b446097"
 
       def install
         bin.install "bindplane"
