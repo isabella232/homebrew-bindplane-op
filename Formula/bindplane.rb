@@ -11,7 +11,7 @@ class Bindplane < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/observIQ/bindplane-op/releases/download/v1.15.0/bindplane-v1.15.0-darwin-amd64.zip"
-      sha256 "dac9bc5ad9986d76b98d0ec76208612a0edbbdaaa30654eb983dc1d24eb71510"
+      sha256 "4086ab9e90aaffb17741c7fe2a43a1dc9276a5237bbbd9e541bf3630c511d789"
 
       def install
         bin.install "bindplane"
@@ -20,7 +20,7 @@ class Bindplane < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/observIQ/bindplane-op/releases/download/v1.15.0/bindplane-v1.15.0-darwin-arm64.zip"
-      sha256 "453610ed8b263ee12a325507fd4a9f9574a4df58a5a536f815a001e228da992a"
+      sha256 "8f77c4b6984480f45ef0a770fc3cbf968276e86a74e327fd44444ab53cd89bb8"
 
       def install
         bin.install "bindplane"
@@ -32,7 +32,7 @@ class Bindplane < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/observIQ/bindplane-op/releases/download/v1.15.0/bindplane-v1.15.0-linux-amd64.zip"
-      sha256 "566dd2f54c0a1ce48419449c60b587832ae749e93534d14dd38aeba3a9530f0e"
+      sha256 "f2419e596782bea895fcd90f689a18e2ffd0a133ab491402f5db092fd8985fab"
 
       def install
         bin.install "bindplane"
@@ -41,7 +41,7 @@ class Bindplane < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/observIQ/bindplane-op/releases/download/v1.15.0/bindplane-v1.15.0-linux-arm64.zip"
-      sha256 "a48fc55299ad3c5b9ebd058adeefc561181917630d296cf98a47de0b455f06c4"
+      sha256 "a121407bd7d49261dad081f72462820d57f78e283d39f2708c959863e735ad74"
 
       def install
         bin.install "bindplane"
@@ -50,7 +50,7 @@ class Bindplane < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/observIQ/bindplane-op/releases/download/v1.15.0/bindplane-v1.15.0-linux-arm.zip"
-      sha256 "289f4dde491a432a5240fb99e19b55a03e8b3c67fc459ce07820de6a65813a92"
+      sha256 "f0e3e8b4959fee94881cd7cc2928ba0f2cfa03842b4c86ca8aef320c7feb0383"
 
       def install
         bin.install "bindplane"
